@@ -26,7 +26,7 @@ public class SentenceReader {
      * @return A list of all sentences in the file
      * @throws IOException May throw an IOException while reading the file
      */
-    public List<String> readAllSentences(String filepath) throws IOException {
+    public ArrayList<String> readAllSentences(String filepath) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(filepath));
         while((sentence = reader.readLine()) != null){
             sentence = sanitiseSentence(sentence);
